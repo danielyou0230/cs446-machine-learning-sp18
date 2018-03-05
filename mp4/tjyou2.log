@@ -1,0 +1,23 @@
+test_backward_zero (test_model.ModelTests) ... ok
+test_forward_shape (test_model.ModelTests) ... ok
+test_forward_zero (test_model.ModelTests) ... ok
+test_loss_no_reg_v1 (test_model.ModelTests) ... ok
+test_loss_no_reg_v2 (test_model.ModelTests) ... ok
+test_loss_reg (test_model.ModelTests) ... ok
+test_qp_1d (test_qp.QpTests) ... ok
+test_qp_2d (test_qp.QpTests) ... ok
+test_qp_g_h_shape (test_qp.QpTests) ... ok
+test_qp_p_q_shape (test_qp.QpTests) ... FAIL
+
+======================================================================
+FAIL: test_qp_p_q_shape (test_qp.QpTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/yeh17/svn_repo/autograder_new/mp4_programming/submissions/tjyou2/tests_autograder/test_qp.py", line 17, in test_qp_p_q_shape
+    self.assertEqual(self.P.shape[0], self.model.ndims + 1 + self.dataset['image'].shape[0])
+AssertionError: 10 != 13
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.017s
+
+FAILED (failures=1)
